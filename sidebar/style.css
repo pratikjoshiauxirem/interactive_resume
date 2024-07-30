@@ -1,0 +1,234 @@
+body {
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+
+p {
+    font-size: 120%;
+}
+
+.containt {
+    height: 100vh;
+    margin: 0px auto;
+    padding: 0.5em;
+    display: flex;
+    gap: none;
+}
+
+.sidebar {
+    /* border: 1px solid white; */
+    border-radius: 5%;
+    background-color: rgb(46, 48, 49);
+    max-height: 100vh;
+    width: 25%;
+    position: fixed;
+    top: 1rem;
+}
+
+.sidebar .container {
+    /* border: 1px solid white; */
+    width: 70%;
+    height: 80%;
+    margin: 30px auto;
+    /* margin-top: 30px; */
+}
+
+.container .img_container {
+    width: 10em;
+    height: 10em;
+    border-radius: 150px;
+    margin: 0px auto;
+    margin-top: 1em;
+    background: rgb(122, 119, 119);
+    padding: 2px;
+}
+
+.sidebar .name {
+    color: white;
+    font-weight: 800;
+    /* border: 1px solid white; */
+    margin: 0px auto;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.img_container .img {
+    width: 9.99em;
+    height: 9.99em;
+    border-radius: 50%;
+    margin: 0px auto;
+    background: red;
+    position: relative;
+}
+
+.img h4 {
+    position: absolute;
+    top: 50%;
+    border: 1px solid white;
+    margin: 0px auto;
+    left: 40%
+}
+.position {
+    text-align: center;
+    color: white;
+    margin-top: 0.3em;
+    color: greenyellow;
+}
+.text_1 {
+    animation: text_1;
+}
+
+.text_2 {
+    animation: text_2;
+}
+
+.text_1,
+.text_2 {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 8s;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
+}
+
+.text_1::after,
+.text_2::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: cursor infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(10, end);
+    /* opacity: 1; */
+}
+
+@keyframes cursor {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes text_2 {
+
+    0%,
+    50%,
+    100% {
+        width: 0;
+    }
+
+    60%,
+    90% {
+        width: 7em;
+    }
+}
+
+@keyframes text_1 {
+
+    0%,
+    50%,
+    100% {
+        width: 0;
+    }
+
+    10%,
+    40% {
+        width: 6.5em;
+    }
+}
+
+.personal_details {
+    color: white;
+}
+
+.personal_details h5 {
+    margin: 0.5em 0px;
+
+}
+
+.personal_details .pd_key {
+    color: grey;
+}
+
+.personal_details .pd_value {
+    float: right;
+}
+
+.skills {
+    margin-top: 3em;
+    height: 30%;
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+    border-radius: 10%;
+    padding: 1em;
+}
+
+.skills h6 {
+    margin: 0px;
+}
+
+.skill_score {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+}
+
+.s_name {
+    color: grey;
+    text-align: center;
+}
+
+.s_score {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    padding: 1em 1em;
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.s_score::before {
+    content: "";
+    color: white;
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    background-color: rgb(22, 22, 22);
+}
+
+.s_score::after {
+    content: "90%";
+    color: white;
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+    align-items: center;
+    top: 40%;
+}
+
+.download_my_cv {
+    background: yellowgreen;
+    border: none;
+    padding: 0.5em 1em;
+    margin: 1em 2em;
+    color: black;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+}

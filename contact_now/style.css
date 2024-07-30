@@ -1,0 +1,231 @@
+body {
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+p{
+    font-size: 120%;
+}
+
+.containt {
+    height: 100vh;
+    margin: 0px auto;
+    padding: 0.5em;
+    display: flex;
+    gap: none;
+}
+
+
+.intro {
+    width: 100%;
+    background-color: rgb(46, 48, 49);
+    border-radius: 25px;
+    padding: 2em;
+    margin: 1em;
+}
+
+.intro_detail {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+.id2 {
+    padding: 1%;
+}
+
+
+.about_me .skill_section {
+    margin: 1em 0px;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.about_me .skill_section span {
+    color: grey;
+    border: white 1px dotted;
+    border-radius: 25px;
+    padding: 1em;
+    margin: 1em;
+}
+
+.quanti {
+    display: flex;
+    justify-content: space-around;
+}
+
+.quanti h1 {
+    color: yellowgreen;
+    margin-bottom: 0px;
+}
+
+.quanti .q1 {
+    font-size: 18px;
+    color: grey;
+}
+
+.skills_adavantages {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skills_adavantages .skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skill img {
+    width: 30%;
+    margin: 10px auto;
+}
+.skill h3{
+    text-align: center;
+}
+.skill_progress {
+    position: relative;
+    width: 7em;
+    height: 7em;
+    padding: 1em 1em;
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background:conical_grediebt; */
+}
+
+.skill_progress::before {
+    content: "";
+    color: white;
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+    background-color: rgb(22, 22, 22);
+    align-items: center;
+}
+
+.skill_progress::after {
+    content: "90%";
+    color: white;
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+    align-items: center;
+    top: 40%;
+}
+
+
+.position {
+    text-align: center;
+    color: white;
+    margin-top: 0.3em;
+    color: greenyellow;
+}
+
+.resume {
+    height: 100vh;
+    width: 60% !important;
+    padding: 1em;
+    position: absolute;
+    left: 25%;
+    /* background-color: red; */
+}
+
+/* education details */
+
+.education_details{
+    width: 90%;
+    margin: 2rem auto;
+    display: flex;
+}
+.education_details .e2{
+    width: 99.9%;
+    padding: 1%;   
+}
+.education_details .e1{
+    width: 40%;
+    padding: 1%;   
+}
+.education_details .e2{
+ text-align: right;
+}
+.education_details *{
+    margin: 0px;
+}
+.education_details .divider{
+    width: 0.1%;
+    border-left:1px solid black;
+    position: relative;
+
+}
+
+
+/* Contact Details */
+.contact{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .details div{
+    margin-top: 2rem;
+}
+
+.contact .details div *{
+    margin: 0px;
+}
+.contact .details div p{
+   color: rgb(128, 127, 127);
+}
+.contact .form{
+    width: 70%;
+}
+.form form{
+    padding: 3%;
+}
+.form-group{
+    margin-bottom: 1rem;
+}
+.form input,textarea{
+    padding: 2%;
+    margin-top: 1%;
+    width: 90%;
+    border:1px solid rgb(105, 102, 102);
+    background-color: rgb(83, 80, 80);
+    border-radius: 10px;
+    color: white;
+}
+.dc{
+    width: 1rem;
+    height: 1rem;
+    background: yellowgreen;
+    border-radius: 50%;
+    position: absolute;
+    left: -0.5rem;
+    top: 1rem;
+}
+.resume .title {
+    padding: 10px;
+    border: 1px solid rgb(114, 113, 113);
+    border-radius: 25px;
+    margin-bottom: 100em;
+}
+.download_my_cv {
+    background: yellowgreen;
+    border: none;
+    padding: 0.5em 1em;
+    margin: 1em 2em;
+    color: black;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+}
+.hire_me {
+    margin: 0px;
+    font-size: 1.5em;
+    border-radius: 25px;
+}
